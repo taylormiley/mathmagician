@@ -12,15 +12,17 @@ namespace Mathmagician
     public class NaturalNumbers
     {
         protected int first;
+        protected int increment;
 
         public NaturalNumbers()
         {
             first = 1;
+            increment = 1;
         }
 
         public virtual int GetNext(int x)
         {
-            return x+1;
+            return x+increment;
         }
 
         public virtual int GetFirst()
@@ -28,12 +30,12 @@ namespace Mathmagician
             return first;
         }
 
-        public virtual int[] GetSequence()
+        public int[] GetSequence()
         {
             return GetSequence(10);
         }
 
-        public virtual int[] GetSequence(int length)
+        public int[] GetSequence(int length)
         {
             List<int> output = new List<int>();
             output.Add(GetFirst());
