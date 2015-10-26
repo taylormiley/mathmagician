@@ -4,7 +4,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace MathmagicianTests
 {
     [TestClass]
-    public class UnitTest1
+    public class PrimeTests
     {
         [TestMethod]
         public void TestMethod1()

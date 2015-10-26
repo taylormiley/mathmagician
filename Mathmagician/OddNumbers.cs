@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace Mathmagician
 {
-    class OddNumbers
+    public class OddNumbers : NaturalNumbers
     {
+        public OddNumbers()
+        {
+            first = 1;
+            increment = 2;
+        }
     }
 }
